@@ -12,14 +12,14 @@ public class Main {
 
         try {
             connection = JDBCConnection.getConnection();
-//            DataDisplay.displayAllTasks(connection);
+            DataDisplay.displayAllTasks(connection);
 
             DataDisplay.displayStaff(connection);
-//            DataDisplay.displayStaffBySections(connection, "development");
-//            DataDisplay.displayStaffBySections(connection, "management");
-//            DataDisplay.displayTasksForStaff(connection, 2);
-//            DataDisplay.displayStaffDeleted(connection, 9);
-//            DataDisplay.displayTaskAdded(connection, 4, "task 6");
+            DataDisplay.displayStaffBySections(connection, "development");
+            DataDisplay.displayStaffBySections(connection, "management");
+            DataDisplay.displayTasksForStaff(connection, 2);
+            DataDisplay.displayStaffDeleted(connection, 9);
+            DataDisplay.displayTaskAdded(connection, 5, "task 7");
         } catch (Exception E) {
             System.out.println("JDBC Driver error");
         }

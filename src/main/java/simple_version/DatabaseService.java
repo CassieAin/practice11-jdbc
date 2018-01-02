@@ -1,4 +1,4 @@
-package utils;
+package simple_version;
 
 import java.sql.*;
 
